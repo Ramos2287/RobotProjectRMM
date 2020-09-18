@@ -26,6 +26,7 @@ FirstSeleniumTest
     Log    Test Completed
     
 SampleLoginTest
+    [Tags]    RMM3
     [Documentation]    this is a Sample Login Test
     Open Browser    ${URL}    chrome
     Maximize Browser Window
