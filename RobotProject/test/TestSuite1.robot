@@ -37,7 +37,19 @@ SampleLoginTest
     Close Browser
     Log    Test Login Completed
     Log    This test is executed by %{username} & %{os} 
-    Set Tags    coucou           
+    Set Tags    coucou        
+    
+ThirdSeleniumTest
+    [Tags]    RMM7
+
+    Open Browser    https://google.com    chrome
+    Set Browser Implicit Wait    5
+    Input Text    name=q    Naruto Uzumaki
+    Press Keys    name=q    ENTER 
+    #Click Button    name=btnK
+    Sleep    2       
+    Close Browser
+    Log    Test Completed   
     
 *** Variables ***
 ${URL}          https://opensource-demo.orangehrmlive.com/ 
